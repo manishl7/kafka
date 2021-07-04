@@ -1,4 +1,5 @@
-simple kafka project that streams data.py 
+#simple kafka project that streams data.py 
+
 1>need to create a topic for the same. In my case topic = kafka-topic
 
 2>Start zookeeper server and kafka server 
@@ -9,6 +10,8 @@ kafka-server-start.sh config/server.properties
 
 3>To create a topic
 kafka-topics.sh --bootstrap-server 127.0.0.1:9092 --topic kafka-project --create   #kafka-proect is just the name of the topic ;it can be anything.
+then 3.1>to run consumer #this is where we can view results
+kafka-console-consumer.sh --bootstrap-server 127.0.0.1:9002 --topic kafka-project 
 
 4>Once the kafka topic is creaated run the data.py and producer.py
 
