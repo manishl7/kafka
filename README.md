@@ -8,7 +8,7 @@ zookeeper-server-start.sh config/zookeper.properties
 kafka-server-start.sh config/server.properties
 
 3>To create a topic
-kafka-topics.sh --bootstrap-server 127.0.0.1:9092 --topic kafka-topic --create
+kafka-topics.sh --bootstrap-server 127.0.0.1:9092 --topic kafka-project --create   #kafka-proect is just the name of the topic ;it can be anything.
 
 4>Once the kafka topic is creaated run the data.py and producer.py
 
